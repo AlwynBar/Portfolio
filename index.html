@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Alwyn Barnard - Portfolio</title>   
     <link rel="stylesheet" href="styles.css">
+    <style>
+        html 
+        {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Alwyn Barnard</h1>
-        <p>Devoloper | Programmer | Analyst | Problem Solver</p>
+        <p>Devoloper | Programmer | Analyst | Problem Solver | Web Developer</p>
     </header>
 </body>
 
@@ -22,6 +29,7 @@
     </ul>
 </nav>
 
+<div class="container">
 <section id="about">
     <h2>About me</h2>
     <!-- <img src="images/CV_Photo.jpg" alt="Alwyn Barnard" class="profile-image"> -->
@@ -122,11 +130,11 @@
     <div class="project">
         <h3>Different projects</h3>
         <p>HTML Project</p>
-        <a href="#">https://github.com/AlwynBar/32033303_Project_2</a>
+        <a href="#" class="button">https://github.com/AlwynBar/32033303_Project_2</a>
         <p>Group C# Project</p>
-        <a href="#">https://github.com/AlwynBar/CMPG223_Group_10</a>
+        <a href="#" class="button">https://github.com/AlwynBar/CMPG223_Group_10</a>
         <p>Individual C# Project</p>
-        <a href="#">https://github.com/AlwynBar/CMPG323_Project3_32033303</a>
+        <a href="#" class="button">https://github.com/AlwynBar/CMPG323_Project3_32033303</a>
         
     </div>
 </section>
@@ -135,7 +143,24 @@
     <h2>Contact Information</h2>
     <p>Cell number: 0662334444</p>
     <p>Email: allas.barnard@gmail.com</p>
-    <p>LinkedIn: <a href="#">https://www.linkedin.com/in/alwyn-barnard-294101258/</a></p>
-    <p>GitHub: <a href="#">https://github.com/AlwynBar</a></p>
-    
+    <p>LinkedIn: <a href="#" class="button">https://www.linkedin.com/in/alwyn-barnard-294101258/</a></p>
+    <p>GitHub: <a href="#" class="button">https://github.com/AlwynBar</a></p>
+
+    <footer>
+        <p>&copy; 2025 Alwyn Barnard. All rights reserved</p>
+    </footer>
+</div>
 </section>
+
+<script>
+    //Animate skill bars when page loads.
+    document.addEventListener('DOMContentLoaded', function() {
+        let skilllevel = document.querySelectorAll('.skill-level');
+        skilllevel.forEach((bar) => {
+            bar.style.width = bar.getAttribute("style").split(":")[1];
+        });
+    });
+</script>
+    
+</body>
+</html>

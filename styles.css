@@ -9,22 +9,37 @@ padding-left
 
 These properties can take values in different units such as pixels (px), 
 points (pt), centimeters (cm), or percentages (%). Negative values are not allowed*/
+
+
+/*General styles*/
 body
 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/*Container*/
+.container
+{
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
 
 /*Header*/
 header
 {
     text-align: center;
+    padding: 20px; /*CSS Padding is a property used to create space around an element's content, inside of any defined borders.*/
     background: #333;
     color: white;
-    padding: 20px; /*CSS Padding is a property used to create space around an element's content, inside of any defined borders.*/
+   border-radius: 10px 10 px 0 0;
 }
 
 /*Navigation*/
@@ -50,13 +65,13 @@ nav ul li a
 section
 {
     padding: 40px;
-    text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
 /*Skill Section*/
 .skill
 {
-    margin: 20px 0;
+    margin-bottom: 15px;
 }
 .skill p
 {
